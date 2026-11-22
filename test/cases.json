@@ -1,0 +1,46 @@
+{
+ "tests": [
+  {
+   "in": {
+    "dev": "Sunucu;450;2;;4\nStorage;600;2\nSwitch;150;2;;2\nNVR;120;1;A\nModem;20;1;B",
+    "volt": 230,
+    "amp": 16,
+    "phase": "1",
+    "derate": 80
+   },
+   "v": {
+    "a": 1470,
+    "b": 1370,
+    "failA": 2720,
+    "failB": 2820,
+    "limit": 2944
+   }
+  },
+  {
+   "in": {
+    "dev": "Blade şasi;3000;2;;3",
+    "volt": 400,
+    "amp": 16,
+    "phase": "3",
+    "derate": 80
+   },
+   "v": {
+    "a": 4500,
+    "failA": 9000,
+    "limit": 8868
+   }
+  },
+  {
+   "in": {
+    "dev": "X;100;3"
+   },
+   "err": "dev"
+  },
+  {
+   "in": {
+    "dev": "X;100;1;C"
+   },
+   "err": "dev"
+  }
+ ]
+}
